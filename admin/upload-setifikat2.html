@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Upload Certificate</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:Arial, sans-serif; background:#f5f6fa; color:#333;}
+
+    .layout {display:flex; height:100vh; width:100%;}
+
+    /* Sidebar */
+    .sidebar {
+      width:220px;
+      background:#1e3a5f;
+      color:#fff;
+      padding:20px;
+    }
+    .sidebar h2 {margin-bottom:20px; font-size:20px;}
+    .sidebar ul {list-style:none;}
+    .sidebar ul li {margin:15px 0;}
+    .sidebar ul li a {color:#fff; text-decoration:none; font-size:14px;}
+    .sidebar ul li a:hover {text-decoration:underline;}
+
+    /* Main */
+    .main {
+      flex:1;
+      display:flex;
+      flex-direction:column;
+    }
+
+    /* Header */
+    .header {
+      background:#fff;
+      padding:15px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #ddd;
+    }
+    .header .logo a {text-decoration:none; font-size:18px; font-weight:bold; color:#1e3a5f;}
+    .header ul {list-style:none; display:flex;}
+    .header ul li {margin-left:20px;}
+    .header ul li a {text-decoration:none; color:#333; font-size:14px;}
+
+    /* Content */
+    .content {
+      flex:1;
+      padding:20px;
+      background:#f5f6fa;
+    }
+
+    .card {
+      background:#fff;
+      padding:30px;
+      border-radius:8px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      max-width:600px;
+      margin:auto;
+    }
+
+    .card h2 {
+      margin-bottom:20px;
+      font-size:20px;
+      color:#1e3a5f;
+    }
+
+    form label {
+      display:block;
+      margin-bottom:8px;
+      font-weight:bold;
+      font-size:14px;
+    }
+
+    form select, 
+    form input[type="file"] {
+      width:100%;
+      padding:8px;
+      margin-bottom:20px;
+      border:1px solid #ccc;
+      border-radius:4px;
+      font-size:14px;
+    }
+
+    form button {
+      background:#1e3a5f;
+      color:#fff;
+      padding:10px 20px;
+      border:none;
+      border-radius:4px;
+      font-size:14px;
+      cursor:pointer;
+    }
+    form button:hover {background:#16324a;}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Admin Panel</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Certificate Upload</a></li>
+      </ul>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo"><a href="#">Yayasan</a></div>
+        <ul>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <div class="card">
+          <h2>Upload Certificate</h2>
+          <form>
+            <label for="class">Nama Kelas</label>
+            <select id="class" name="class">
+              <option value="">-- Pilih Kelas --</option>
+              <option value="class1">English Novice</option>
+              <option value="class2">English Intermediate</option>
+              <option value="class3">English Advanced</option>
+            </select>
+
+            <label for="student">Nama Siswa</label>
+            <select id="student" name="student">
+              <option value="">-- Pilih Siswa --</option>
+              <option value="s1">John Doe</option>
+              <option value="s2">Jane Smith</option>
+              <option value="s3">Michael Johnson</option>
+            </select>
+
+            <label for="file">Upload File (PDF)</label>
+            <input type="file" id="file" name="file" accept="application/pdf">
+
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

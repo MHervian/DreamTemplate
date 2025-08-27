@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Kelas Pendaftaran</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+    body, html {height: 100%; width: 100%;}
+    .layout {display: flex; height: 100vh; width: 100%;}
+    .sidebar {
+      width: 220px;
+      background-color: #1e3a5f;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar h2 {
+      padding: 20px;
+      text-align: center;
+      background-color: #16263d;
+      font-size: 18px;
+    }
+    .sidebar ul {list-style: none; padding: 10px;}
+    .sidebar ul li {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover {
+      background-color: #2d4b75;
+    }
+    .main {flex: 1; display: flex; flex-direction: column; background-color: #f4f6f9;}
+    .header {
+      height: 60px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .header .logo {font-weight: bold; color: #1e3a5f;}
+    .header ul {list-style: none; display: flex;}
+    .header ul li {
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    .content {padding: 20px; overflow: auto;}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {background-color: #1e3a5f; color: #fff;}
+    tr:nth-child(even) {background-color: #f9f9f9;}
+    .btn-detail {
+      padding: 6px 12px;
+      background-color: #1e3a5f;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-detail:hover {background-color: #16263d;}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">
+      <h2>DreamTemplate</h2>
+      <ul>
+          <li><a href="admin-dashboard.html">Dashboard</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="kurikulum.html">Kurikulum</a></li>
+          <li><a href="kelas.html">Kelas</a></li>
+          <li><a href="kelas-pendaftaran.html">Pendaftar Kelas</a></li>
+          <li><a href="upload-setifikat.html">Upload Sertifikat</a></li>
+        </ul>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="logo">DreamPanel</div>
+        <ul>
+          <li>Inbox</li>
+          <li>Settings</li>
+          <li>Logout</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2>Data Pendaftar Kelas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nama Kelas</th>
+              <th>Start Pendaftaran</th>
+              <th>End Pendaftaran</th>
+              <th>Total Daftar</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>English Novice</td><td>2025-09-01</td><td>2025-09-15</td><td>12/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>English Beginner</td><td>2025-09-01</td><td>2025-09-20</td><td>20/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>English Intermediate</td><td>2025-09-05</td><td>2025-09-25</td><td>15/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>Business English</td><td>2025-09-10</td><td>2025-09-30</td><td>25/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>Academic English</td><td>2025-09-15</td><td>2025-10-05</td><td>18/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>English for Kids</td><td>2025-09-20</td><td>2025-10-10</td><td>10/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>IELTS Prep</td><td>2025-09-25</td><td>2025-10-15</td><td>22/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>TOEFL Prep</td><td>2025-10-01</td><td>2025-10-20</td><td>16/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>Conversation Club</td><td>2025-10-05</td><td>2025-10-25</td><td>27/30</td><td><button class="btn-detail">Detail</button></td></tr>
+            <tr><td>English Professional</td><td>2025-10-10</td><td>2025-10-30</td><td>19/30</td><td><button class="btn-detail">Detail</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
