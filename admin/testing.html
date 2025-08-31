@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Test Modal with jQuery + Bootstrap 4.6.2</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    .btn-approve { background:#007bff; color:#fff; border:none; padding:5px 8px; border-radius:4px; }
+    .btn-cancel { background:#dc3545; color:#fff; border:none; padding:5px 8px; border-radius:4px; }
+  </style>
+</head>
+<body class="p-4">
+  <div class="container">
+    <h4 class="mb-3">Daftar Peserta</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>No.</th><th>Nama Peserta</th><th>Email</th><th>Kontak</th><th>Status</th><th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>John Doe</td><td>john@example.com</td><td>081234567890</td><td class="status-cell">Aktif</td>
+          <td>
+            <button class="btn-approve">Approve</button>
+            <button class="btn-cancel">Cancel</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td><td>Jane Smith</td><td>jane@example.com</td><td>081234567891</td><td class="status-cell">Aktif</td>
+          <td>
+            <button class="btn-approve">Approve</button>
+            <button class="btn-cancel">Cancel</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Konfirmasi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          Apakah Anda yakin ingin <strong id="actionTypeText"></strong> peserta ini?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+          <button type="button" id="confirmBtn" class="btn btn-primary">Ya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1) jQuery harus dimuat dulu -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- 2) lalu bootstrap bundle (include Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(function(){
+      // debug cepat: cek versi dan apakah plugin modal ada
+      console.log('jQuery version:', $.fn.jquery);
+      console.log('$.fn.modal ===', typeof $.fn.modal);
+
+      var $currentRow = null;
+      var action = null;
+
+      // event untuk tombol Approve / Cancel
+      $('table').on('click', '.btn-approve, .btn-cancel', function(){
+        $currentRow = $(this).closest('tr');
+        action = $(this).hasClass('btn-approve') ? 'approve' : 'cancel';
+        $('#actionTypeText').text(action === 'approve' ? 'Approve' : 'Cancel');
+        $('#confirmModal').modal('show');
+      });
+
+      // konfirmasi pada modal
+      $('#confirmBtn').on('click', function(){
+        if (!$currentRow) {
+          $('#confirmModal').modal('hide');
+          return;
+        }
+        var $statusCell = $currentRow.find('.status-cell');
+        if (action === 'approve') {
+          $statusCell.text('Approved').removeClass('text-danger').addClass('text-success');
+        } else {
+          $statusCell.text('Canceled').removeClass('text-success').addClass('text-danger');
+        }
+        $('#confirmModal').modal('hide');
+      });
+    });
+  </script>
+</body>
+</html>
