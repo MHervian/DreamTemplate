@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Dashboard</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome 7 -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="w-full flex justify-between px-6 py-3.5 border-b">
+      <div>
+        <button type="button"><i class="fa-solid fa-bars py-2 cursor-pointer"></i></button>
+        <h1 class="font-bold inline-block ml-2">
+          <a href="dashboard.html">Dashboard</a>
+        </h1>
+      </div>
+      <span class="flex justify-between pl-5">
+        <a href="#" class="px-4">Settings</a>
+        <span>&verbar;</span>
+        <a href="login.html" class="pl-4">Logout</a>
+      </span>
+    </header>
+    <main class="flex">
+      <nav class="w-56 p-3 border-r border-b">
+        <span class="block">Navigasi</span>
+        <ul class="py-2">
+          <li>
+            <a href="#" class="block">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="block">Menu 1</a>
+          </li>
+          <li>
+            <a href="#" class="block">Menu 2</a>
+          </li>
+          <li>
+            <a href="#" class="block">Menu 3</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex-1 border-b flex flex-col">
+        <div class="flex-1 p-3">
+          <!-- Title and breadcrumbs -->
+          <h2 class="text-4xl">Dashboard</h2>
+          <span class="block py-2">
+            <p>Dashboard</p>
+          </span>
+          <!--/ Title and breadcrumbs  -->
+
+          <div class="py-3"></div>
+
+          <!-- Card container wide full -->
+          <div class="p-3 grid grid-cols-2 border rounded-md ">
+            <p class="col-span-1">This is Text 1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis nulla ullam, minus expedita repellat sed deleniti asperiores unde beatae eos odit vitae reprehenderit ratione officia corporis quos perspiciatis nihil! Aut.</p>
+            <p class="col-span-1">This is Text 2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic omnis recusandae quidem iure illum, ratione minus. Architecto illum quos pariatur enim aperiam error accusamus impedit esse, velit, sapiente perspiciatis. Consectetur.</p>
+          </div>
+          <!--/ Card container wide full -->
+
+          <div class="py-2"></div>
+
+          <!-- Card container split -->
+           <div class="grid grid-cols-2 gap-x-4">
+            <div class="col-span-1 p-3 border rounded-md">This is Text 3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis, velit est, voluptates unde voluptatibus mollitia eius cumque vitae ipsa voluptatum ex minima atque reiciendis perferendis odio nam blanditiis placeat?</div>
+            <div class="col-span-1 p-3 border rounded-md">This is Text 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur error quis odit accusantium! Ad labore pariatur deleniti iusto nemo fuga, molestias officiis sit provident voluptate cum quam assumenda consectetur.</div>
+           </div>
+          <!--/ Card container split -->
+
+          <!-- Card with table init -->
+          <!--/ Card with table init -->
+        </div>
+        <div class="border-t p-3">
+          <p>&copy;Copyright 2025</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
