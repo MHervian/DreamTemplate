@@ -15,20 +15,9 @@
           referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header class="w-full flex justify-between px-6 py-3.5 border-b">
-      <div>
-        <button type="button"><i class="fa-solid fa-bars py-2 cursor-pointer"></i></button>
-        <h1 class="font-bold inline-block ml-2">
-          <a href="dashboard.html">Dashboard</a>
-        </h1>
-      </div>
-      <span class="flex justify-between pl-5">
-        <a href="#" class="px-4">Settings</a>
-        <span>&verbar;</span>
-        <a href="login.html" class="pl-4">Logout</a>
-      </span>
-    </header>
+
     <main class="flex">
+      <!-- Navigation -->
       <nav class="w-56 p-3 border-r border-b">
         <span class="block">Navigasi</span>
         <ul class="py-2">
@@ -46,7 +35,27 @@
           </li>
         </ul>
       </nav>
+      <!--/Navigation  -->
+
+      <!-- Content -->
       <div class="flex-1 border-b flex flex-col">
+        <!-- Header -->
+        <header class="flex justify-between px-3 py-2.5 border-b">
+          <div>
+            <button type="button"><i class="fa-solid fa-bars py-2 cursor-pointer"></i></button>
+            <h1 class="font-bold inline-block ml-2">
+              <a href="dashboard.html">DreamTemplate Panel</a>
+            </h1>
+          </div>
+          <span class="flex justify-between pl-5">
+            <a href="#" class="px-4">Settings</a>
+            <a href="#" class="px-4">About</a>
+            <span>&verbar;</span>
+            <a href="login.html" class="pl-4">Logout</a>
+          </span>
+        </header>
+        <!--/ Header -->
+
         <div class="flex-1 p-3">
           <!-- Title and breadcrumbs -->
           <h2 class="text-4xl">Dashboard</h2>
@@ -64,22 +73,169 @@
           </div>
           <!--/ Card container wide full -->
 
-          <div class="py-2"></div>
+          <div class="py-4"></div>
 
           <!-- Card container split -->
-           <div class="grid grid-cols-2 gap-x-4">
+          <div class="grid grid-cols-2 gap-x-4">
             <div class="col-span-1 p-3 border rounded-md">This is Text 3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis, velit est, voluptates unde voluptatibus mollitia eius cumque vitae ipsa voluptatum ex minima atque reiciendis perferendis odio nam blanditiis placeat?</div>
             <div class="col-span-1 p-3 border rounded-md">This is Text 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur error quis odit accusantium! Ad labore pariatur deleniti iusto nemo fuga, molestias officiis sit provident voluptate cum quam assumenda consectetur.</div>
            </div>
           <!--/ Card container split -->
 
-          <!-- Card with table init -->
-          <!--/ Card with table init -->
+          <div class="py-4"></div>
+
+          <!-- Card with table init, full width -->
+          <table class="w-full border-collapse border">
+            <thead>
+              <tr>
+                <th class="border">No.</th>
+                <th class="border">Kolom 1</th>
+                <th class="border">Kolom 2</th>
+                <th class="border">Kolom 3</th>
+                <th class="border">Kolom 4</th>
+                <th class="border">Kolom 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border">1.</td>
+                <td class="border">Data Kolom 1</td>
+                <td class="border">Data Kolom 2</td>
+                <td class="border">Data Kolom 3</td>
+                <td class="border">Data Kolom 4</td>
+                <td class="border">Data Kolom 5</td>
+              </tr>
+              <tr>
+                <td class="border">2.</td>
+                <td class="border">Data Kolom 1</td>
+                <td class="border">Data Kolom 2</td>
+                <td class="border">Data Kolom 3</td>
+                <td class="border">Data Kolom 4</td>
+                <td class="border">Data Kolom 5</td>
+              </tr>
+              <tr>
+                <td class="border">3.</td>
+                <td class="border">Data Kolom 1</td>
+                <td class="border">Data Kolom 2</td>
+                <td class="border">Data Kolom 3</td>
+                <td class="border">Data Kolom 4</td>
+                <td class="border">Data Kolom 5</td>
+              </tr>
+              <tr>
+                <td class="border">4.</td>
+                <td class="border">Data Kolom 1</td>
+                <td class="border">Data Kolom 2</td>
+                <td class="border">Data Kolom 3</td>
+                <td class="border">Data Kolom 4</td>
+                <td class="border">Data Kolom 5</td>
+              </tr>
+              <tr>
+                <td class="border">5.</td>
+                <td class="border">Data Kolom 1</td>
+                <td class="border">Data Kolom 2</td>
+                <td class="border">Data Kolom 3</td>
+                <td class="border">Data Kolom 4</td>
+                <td class="border">Data Kolom 5</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--/ Card with table init, full width -->
+
+          <div class="py-4"></div>
+
+          <!-- Tables in 2 grid -->
+          <div class="grid grid-cols-2 gap-x-4">
+            <div class="col-span-1">
+              <table class="w-full border-collapse border">
+                <thead>
+                  <tr>
+                    <th class="border">No.</th>
+                    <th class="border">Kolom 1</th>
+                    <th class="border">Kolom 2</th>
+                    <th class="border">Kolom 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border">1.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                  <tr>
+                    <td class="border">2.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                  <tr>
+                    <td class="border">3.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                  <tr>
+                    <td class="border">4.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                  <tr>
+                    <td class="border">5.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-span-1">
+              <table class="w-full border-collapse border">
+                <thead>
+                  <tr>
+                    <th class="border">No.</th>
+                    <th class="border">Kolom 1</th>
+                    <th class="border">Kolom 2</th>
+                    <th class="border">Kolom 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border">1.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                  <tr>
+                    <td class="border">2.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                  <tr>
+                    <td class="border">3.</td>
+                    <td class="border">Data Kolom 1</td>
+                    <td class="border">Data Kolom 2</td>
+                    <td class="border">Data Kolom 3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/ Tables in 2 grid -->
+
+          <div class="py-4"></div>
+
+          <!-- Form -->
+          <div class=""></div>
+          <!-- /Form -->
         </div>
         <div class="border-t p-3">
           <p>&copy;Copyright 2025</p>
         </div>
       </div>
+      <!--/ Content -->
+
     </main>
   </body>
 </html>

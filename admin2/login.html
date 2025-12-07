@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Panel - Dashboard</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font Awesome 7 -->
@@ -15,17 +16,23 @@
           referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="flex flex-col justify-center w-full min-h-screen">
-      <div class="w-100 m-auto rounded-md border py-9 px-6">
-        <h1 class="text-4xl text-center mb-8">Login Panel</h1>
+    <div class="flex flex-col justify-center w-full min-h-screen bg-gray-200">
+      <div class="w-100 m-auto rounded-xl py-9 px-6 bg-gray-50 shadow-md">
+        <h1 class="text-4xl text-center mb-8 font-[Rubik]">Login Panel</h1>
         <form>
-          <label for="username" class="block mb-2">Username/Email</label>
-          <input id="username" type="text" class="block w-full p-3 border rounded-sm" placeholder="Username or Email..." />
+          <label for="username" class="block pb-2 font-[Rubik] text-gray-600">Username/Email</label>
+          <div class="flex border-2 border-solid border-gray-300 focus-within:border-blue-500 rounded-sm">
+            <span class="pt-3 px-3"><i class="fa-solid fa-user"></i></span>
+            <input id="username" type="text" class="block w-full py-3 focus:outline-0 font-[Rubik]" placeholder="" />
+          </div>
           <div class="py-2"></div>
-          <label for="password" class="block mb-2">Password</label>
-          <input id="username" type="password" class="block w-full p-3 border rounded-sm" placeholder="*******" />
-          <div class="py-2"></div>
-          <a href="dashboard.html" class="block text-center py-3 border rounded-sm">Login</a>
+          <label for="password" class="block pb-2 font-[Rubik] text-gray-600">Password</label>
+          <div class="flex border-2 border-solid border-gray-300 focus-within:border-blue-500 rounded-sm">
+            <span class="pt-3 px-3"><i class="fa-solid fa-key"></i></span>
+            <input id="username" type="password" class="block w-full py-3 focus:outline-0 font-[Rubik]" placeholder="" />
+          </div>
+          <div class="py-3"></div>
+          <a href="dashboard.html" class="block text-center py-3 bg-blue-400 text-white rounded-sm font-[Rubik]">Login</a>
         </form>
       </div>
     </div>
