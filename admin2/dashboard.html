@@ -16,6 +16,7 @@
           referrerpolicy="no-referrer" />
     <style>
       * { font-family: 'Rubik', Arial, Helvetica, sans-serif; }
+      .navigasi { font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; }
     </style>
   </head>
   <body>
@@ -23,19 +24,41 @@
     <main class="flex">
       <!-- Navigation -->
       <nav class="relative w-56 flex flex-col">
-        <span class="px-3 py-2.5 relative z-5 block text-white bg-[#1c2b4a]">Navigasi</span>
-        <ul class="py-3 px-3 z-3 text-white shadow-md bg-[#1c2b4a] flex-1">
+        <span class="px-3 py-2.5 relative z-5 block text-white bg-[#1c2b4a] navigasi tracking-widest font-extrabold
+        border-solid border-b-[#354970] border-b-2">NAVIGASI</span>
+        <ul class="py-3 z-3 text-white bg-[#1c2b4a] flex-1">
           <li>
-            <a href="#" class="block py-1.5">Dashboard</a>
+            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+              <i class="fa-solid fa-house"></i> Dashboard
+            </a>
           </li> 
           <li>
-            <a href="#" class="block py-1.5">Menu 1</a>
+            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+              <i class="fa-solid fa-landmark"></i> Menu 1
+            </a>
           </li>
           <li>
-            <a href="#" class="block py-1.5">Menu 2</a>
+            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+              <i class="fa-solid fa-folder-open"></i> Menu 2
+            </a>
+            <div class="bg-[#142036]">
+              <ul class="text-white">
+                <li>
+                  <a href="#" class="block py-2.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 1</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 2</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 3</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
-            <a href="#" class="block py-1.5">Menu 3</a>
+            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+              <i class="fa-solid fa-list"></i> Menu 3
+            </a>
           </li>
         </ul>
       </nav>
@@ -44,23 +67,48 @@
       <!-- Content -->
       <div class="flex-1 flex flex-col">
         <!-- Header -->
-        <header class="relative z-3 flex justify-between px-3 py-2.5 shadow-md">
-          <div>
-            <button type="button"><i class="fa-solid fa-bars cursor-pointer"></i></button>
-            <h1 class="font-bold inline-block ml-2 text-blue-600">
+        <header class="relative z-3 flex justify-between px-3 py-1 border-solid border-b-2 border-b-white">
+          <div class="flex items-center">
+            <button type="button" class="text-gray-500">
+              <i class="fa-solid fa-bars cursor-pointer text-2xl"></i>
+            </button>
+            <h1 class="font-bold inline-block ml-2 text-gray-600 navigasi">
               <a href="dashboard.html">DreamTemplate Panel</a>
             </h1>
           </div>
           <span class="flex justify-between pl-5">
-            <a href="#" class="px-4">Settings</a>
-            <a href="#" class="px-4">About</a>
-            <span>&verbar;</span>
-            <a href="login.html" class="pl-4">Logout</a>
+            <div class="relative group">
+              <a href="login.html" class="pl-4 pr-4 text-[1.5rem]">
+                <i class="fa-regular fa-bell text-[#a6a6a6]"></i>
+              </a>
+              <div class="absolute hidden right-0 group-hover:block w-70 bg-white shadow-lg rounded-md mt-2 z-10">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 2</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 3</a>
+              </div>
+            </div>
+            <span class="border-l-2 border-[#e6e6e6]"></span>
+            <div class="relative group">
+              <a href="login.html" class="pl-4 pr-4 text-[1.5rem]">
+                <i class="fa-regular fa-circle-user text-[#a6a6a6]"></i>
+              </a>
+              <div class="absolute hidden right-0 group-hover:block w-70 bg-white shadow-lg rounded-md mt-2 z-10">
+                <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">
+                  <i class="fa-solid fa-gear"></i> Pengaturan
+                </a>
+                <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">
+                  <i class="fa-solid fa-circle-info"></i> Tentang
+                </a>
+                <a href="login.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">
+                  <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </a>
+              </div>
+            </div>
           </span>
         </header>
         <!--/ Header -->
 
-        <div class="flex-1 p-3 bg-gray-50">
+        <div class="flex-1 p-3 bg-[#e7ecf6]">
           <!-- Title and breadcrumbs -->
           <h2 class="text-4xl">Dashboard</h2>
           <span class="block py-2">
@@ -240,22 +288,35 @@
               <form>
                 <!-- Field common -->
                 <label for="field" class="block pb-1">Field Biasa</label>
-                <input id="field" type="text" class="w-full py-3 px-4 border-2 rounded-md border-gray-400 focus:outline-0 focus:border-blue-500" placeholder="Isi field 1..." />
+                <input id="field" type="text" class="w-full py-3 px-4 border-2 rounded-md border-[#d9d9d9] focus:outline-0 focus:border-blue-500" placeholder="Isi field 1..." />
 
                 <div class="py-3"></div>
 
                 <!-- Field with icon -->
                 <label for="field3" class="block pb-1">Field with Icon</label>
-                <div class="flex border-2 border-solid border-gray-400 focus-within:border-blue-500 rounded-md">
+                <div class="flex border-2 border-solid border-[#d9d9d9] focus-within:border-blue-500 rounded-md">
                   <span class="pt-3 px-3"><i class="fa-solid fa-user"></i></span>
                   <input id="field3" type="text" class="block w-full py-3 focus:outline-0" placeholder="Isi field with icon..." />
                 </div>
 
                 <div class="py-3"></div>
 
+                <!-- Label, field with icon inline -->
+                <div class="flex">
+                  <label for="inlineField" class="w-45 py-3">Field Inline</label>
+                  <div class="px-2"></div>
+                  <div class="w-full flex border-2 border-solid border-[#d9d9d9] focus-within:border-blue-500 rounded-md">
+                    <span class="pt-3 px-3"><i class="fa-solid fa-user"></i></span>
+                    <input id="inlineField" type="text" class="block w-full py-3 focus:outline-0" placeholder="Isi field with icon..." />
+                  </div>
+                </div>
+                <!--/ Label, field with icon inline -->
+
+                <div class="py-3"></div>
+
                 <!-- Textarea -->
                 <label for="textarea" class="block pb-1">Textarea</label>
-                <textarea id="textarea" class="border-2 border-solid border-gray-400 focus:outline-0 focus:border-blue-400 rounded-md w-full
+                <textarea id="textarea" class="border-2 border-solid border-[#d9d9d9] focus:outline-0 focus:border-blue-400 rounded-md w-full
                 h-44 py-3 px-4" placeholder="Textarea disini..."></textarea>
 
                 <div class="py-3"></div>
@@ -269,9 +330,71 @@
                 </div>
               </form>
             </div>
+
+            <!-- Table with search and pagination -->
+            <div class="col-span-1 p-3 rounded-md bg-white shadow-md">
+              <!-- Search form -->
+              <div class="pb-3">
+                <form>
+                  <div class="flex w-70">
+                    <div class="w-full flex border-2 border-solid border-[#e6e6e6] focus-within:border-blue-500 rounded-md">
+                      <input id="search" type="text" class="block w-full py-2 pl-2 focus:outline-0" placeholder="Cari..." />
+                    </div>
+                    <div class="px-2"></div>
+                    <button type="button" class="px-3 bg-blue-500 text-white rounded-md">Search</button>
+                  </div>
+                </form>
+              </div>
+              <!--/ Search form -->
+
+              <table class="w-full border-collapse">
+                <thead>
+                  <tr class="bg-blue-200">
+                    <th class="py-2">No.</th>
+                    <th class="py-2">Kolom 1</th>
+                    <th class="py-2">Kolom 2</th>
+                    <th class="py-2">Kolom 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-b-gray-300">
+                    <td class="py-2 px-2">1.</td>
+                    <td class="py-2 px-2">Data Kolom 1</td>
+                    <td class="py-2 px-2">Data Kolom 2</td>
+                    <td class="py-2 px-2">Data Kolom 3</td>
+                  </tr>
+                  <tr class="border-b border-b-gray-300 bg-blue-50">
+                    <td class="py-2 px-2">2.</td>
+                    <td class="py-2 px-2">Data Kolom 1</td>
+                    <td class="py-2 px-2">Data Kolom 2</td>
+                    <td class="py-2 px-2">Data Kolom 3</td>
+                  </tr> 
+                  <tr class="border-b border-b-gray-300">
+                    <td class="py-2 px-2">3.</td>
+                    <td class="py-2 px-2">Data Kolom 1</td>
+                    <td class="py-2 px-2">Data Kolom 2</td>
+                    <td class="py-2 px-2">Data Kolom 3</td>
+                  </tr>
+                  <tr class="border-b border-b-gray-300">
+                    <td class="py-2 px-2">4.</td>
+                    <td class="py-2 px-2">Data Kolom 1</td>
+                    <td class="py-2 px-2">Data Kolom 2</td>
+                    <td class="py-2 px-2">Data Kolom 3</td>
+                  </tr>
+                  <tr class="border-b border-b-gray-300">
+                    <td class="py-2 px-2">5.</td>
+                    <td class="py-2 px-2">Data Kolom 1</td>
+                    <td class="py-2 px-2">Data Kolom 2</td>
+                    <td class="py-2 px-2">Data Kolom 3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--/ Table with search and pagination -->
+
           </div>
           <!-- /Form -->
-
+          
           <div class="py-4"></div>
 
         </div>
