@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Dashboard</title>
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" />
     <!-- Tailwind CSS -->
@@ -24,7 +26,7 @@
     <main class="flex">
       <!-- Navigation -->
       <nav class="relative w-56 flex flex-col">
-        <span class="px-3 py-2.5 relative z-5 block text-white bg-[#1c2b4a] navigasi tracking-widest font-extrabold
+        <span class="px-3 pb-2.5 pt-4.5 relative z-5 block text-white bg-[#1c2b4a] navigasi tracking-widest font-extrabold
         border-solid border-b-[#354970] border-b-2">NAVIGASI</span>
         <ul class="py-3 z-3 text-white bg-[#1c2b4a] flex-1">
           <li>
@@ -67,7 +69,7 @@
       <!-- Content -->
       <div class="flex-1 flex flex-col">
         <!-- Header -->
-        <header class="relative z-3 flex justify-between px-3 py-1 border-solid border-b-2 border-b-white">
+        <header class="relative z-3 flex justify-between px-3 pb-1 pt-3 border-solid border-b-2 border-b-white">
           <div class="flex items-center">
             <button type="button" class="text-gray-500">
               <i class="fa-solid fa-bars cursor-pointer text-2xl"></i>
@@ -78,20 +80,23 @@
           </div>
           <span class="flex justify-between pl-5">
             <div class="relative group">
-              <a href="login.html" class="pl-4 pr-4 text-[1.5rem]">
+              <button type="button" class="relative text-[1.5rem] cursor-pointer">
                 <i class="fa-regular fa-bell text-[#a6a6a6]"></i>
-              </a>
+                <span class="absolute top-1 right-1 h-3 w-3 bg-red-600 rounded-full border-2 border-transparent transform translate-x-1 -translate-y-1"></span>
+              </button>
               <div class="absolute hidden right-0 group-hover:block w-70 bg-white shadow-lg rounded-md mt-2 z-10">
                 <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 1</a>
                 <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 2</a>
                 <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 3</a>
               </div>
             </div>
+            <span class="px-2"></span>
             <span class="border-l-2 border-[#e6e6e6]"></span>
+            <span class="px-2"></span>
             <div class="relative group">
-              <a href="login.html" class="pl-4 pr-4 text-[1.5rem]">
+              <button type="button" class="text-[1.5rem] cursor-pointer">
                 <i class="fa-regular fa-circle-user text-[#a6a6a6]"></i>
-              </a>
+              </button>
               <div class="absolute hidden right-0 group-hover:block w-70 bg-white shadow-lg rounded-md mt-2 z-10">
                 <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">
                   <i class="fa-solid fa-gear"></i> Pengaturan
@@ -104,6 +109,7 @@
                 </a>
               </div>
             </div>
+            <span class="px-3"></span>
           </span>
         </header>
         <!--/ Header -->
@@ -150,7 +156,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-b border-b-gray-300">
+                <tr class="border-b border-b-gray-200">
                   <td class="py-2 px-2">1.</td>
                   <td class="py-2 px-2">Data Kolom 1</td>
                   <td class="py-2 px-2">Data Kolom 2</td>
@@ -158,7 +164,7 @@
                   <td class="py-2 px-2">Data Kolom 4</td>
                   <td class="py-2 px-2">Data Kolom 5</td>
                 </tr>
-                <tr class="border-b border-b-gray-300 bg-blue-50">
+                <tr class="border-b border-b-gray-200 bg-blue-50">
                   <td class="py-2 px-2">2.</td>
                   <td class="py-2 px-2">Data Kolom 1</td>
                   <td class="py-2 px-2">Data Kolom 2</td>
@@ -166,7 +172,7 @@
                   <td class="py-2 px-2">Data Kolom 4</td>
                   <td class="py-2 px-2">Data Kolom 5</td>
                 </tr>
-                <tr class="border-b border-b-gray-300">
+                <tr class="border-b border-b-gray-200">
                   <td class="py-2 px-2">3.</td>
                   <td class="py-2 px-2">Data Kolom 1</td>
                   <td class="py-2 px-2">Data Kolom 2</td>
@@ -174,7 +180,7 @@
                   <td class="py-2 px-2">Data Kolom 4</td>
                   <td class="py-2 px-2">Data Kolom 5</td>
                 </tr>
-                <tr class="border-b border-b-gray-300 bg-blue-50">
+                <tr class="border-b border-b-gray-200 bg-blue-50">
                   <td class="py-2 px-2">4.</td>
                   <td class="py-2 px-2">Data Kolom 1</td>
                   <td class="py-2 px-2">Data Kolom 2</td>
@@ -182,7 +188,7 @@
                   <td class="py-2 px-2">Data Kolom 4</td>
                   <td class="py-2 px-2">Data Kolom 5</td>
                 </tr>
-                <tr class="border-b border-b-gray-300">
+                <tr class="border-b border-b-gray-200">
                   <td class="py-2 px-2">5.</td>
                   <td class="py-2 px-2">Data Kolom 1</td>
                   <td class="py-2 px-2">Data Kolom 2</td>
@@ -210,31 +216,31 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">1.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300 bg-blue-50">
+                  <tr class="border-b border-b-gray-200 bg-blue-50">
                     <td class="py-2 px-2">2.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">3.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300 bg-blue-50">
+                  <tr class="border-b border-b-gray-200 bg-blue-50">
                     <td class="py-2 px-2">4.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">5.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
@@ -254,19 +260,19 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">1.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300 bg-blue-50">
+                  <tr class="border-b border-b-gray-200 bg-blue-50">
                     <td class="py-2 px-2">2.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr> 
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">3.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
@@ -333,6 +339,9 @@
 
             <!-- Table with search and pagination -->
             <div class="col-span-1 p-3 rounded-md bg-white shadow-md">
+              <h3 class="text-2xl">Table with Search</h3>
+              <div class="py-2"></div>
+              
               <!-- Search form -->
               <div class="pb-3">
                 <form>
@@ -341,7 +350,7 @@
                       <input id="search" type="text" class="block w-full py-2 pl-2 focus:outline-0" placeholder="Cari..." />
                     </div>
                     <div class="px-2"></div>
-                    <button type="button" class="px-3 bg-blue-500 text-white rounded-md">Search</button>
+                    <button type="button" class="px-3 bg-blue-500 text-white rounded-md cursor-pointer">Search</button>
                   </div>
                 </form>
               </div>
@@ -357,31 +366,31 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">1.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300 bg-blue-50">
+                  <tr class="border-b border-b-gray-200 bg-blue-50">
                     <td class="py-2 px-2">2.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr> 
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">3.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200 bg-blue-50">
                     <td class="py-2 px-2">4.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
                     <td class="py-2 px-2">Data Kolom 3</td>
                   </tr>
-                  <tr class="border-b border-b-gray-300">
+                  <tr class="border-b border-b-gray-200">
                     <td class="py-2 px-2">5.</td>
                     <td class="py-2 px-2">Data Kolom 1</td>
                     <td class="py-2 px-2">Data Kolom 2</td>
@@ -389,6 +398,33 @@
                   </tr>
                 </tbody>
               </table>
+
+              <div class="pt-5 pb-3">
+                <ul class="flex items-center justify-between gap-2 text-sm font-medium">
+                  <li>
+                    <button type="button" class="px-4 py-1 border rounded-lg text-center cursor-pointer
+                    hover:bg-gray-100 active:bg-blue-500 active:border-blue-500 active:text-white">Prev</button>
+                  </li>
+                  <li>
+                    <div class="flex gap-2">
+                      <button type="button" class="px-2 py-1 border rounded-md text-center cursor-pointer
+                      hover:bg-gray-100 active:bg-blue-500 active:border-blue-500 active:text-white">1</button>
+                      <button type="button" class="px-2 py-1 border rounded-md text-center cursor-pointer
+                      hover:bg-gray-100 active:bg-blue-500 active:border-blue-500 active:text-white">2</button>
+                      <button type="button" class="px-2 py-1 border rounded-md text-center cursor-pointer
+                      hover:bg-gray-100 active:bg-blue-500 active:border-blue-500 active:text-white">3</button>
+                      <button type="button" class="px-2 py-1 border rounded-md text-center cursor-pointer
+                      hover:bg-gray-100 active:bg-blue-500 active:border-blue-500 active:text-white">4</button>
+                      <button type="button" class="px-2 py-1 border rounded-md text-center cursor-pointer
+                      hover:bg-gray-100 active:bg-blue-500 active:border-blue-500 active:text-white">5</button>
+                    </div>
+                  </li>
+                  <li>
+                    <button type="button" class="px-4 py-1 border rounded-lg text-center cursor-pointer
+                    hover:bg-gray-100 active:bg-blue-500 active:border-blue-500 active:text-white">Next</button>
+                  </li>
+                </ul>
+              </div>
             </div>
             <!--/ Table with search and pagination -->
 
@@ -399,7 +435,7 @@
 
         </div>
         <div class="bg-white p-3">
-          <p>&copy;Copyright 2025</p>
+          <p>&copy;DreamTemplate 2025</p>
         </div>
       </div>
       <!--/ Content -->
