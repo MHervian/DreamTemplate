@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Akun - HangulDream</title>
+    <title>Daftar Akun - HangulDream</title>
     <!-- favicon -->
     <link rel="icon" href="image_samples/favicon/favicon.ico" type="image/x-icon">
 
@@ -28,22 +28,29 @@
         
         <!-- Header section -->
         <div class="relative md:flex md:flex-col md:justify-center-safe col-span-1 pt-10 pb-18 px-5 bg-blue-400 md:rounded-tl-xl md:rounded-bl-xl">
-          <h1 class="text-white text-3xl font-bold">Hai! 👋</h1>
+          <h1 class="text-white text-3xl font-bold">Sudah Siap?</h1>
           <div class="py-1"></div>
-          <p class="text-white">Senang berjumpa lagi. Silahkan login akun Anda untuk mengakses dasbor personal.</p>
+          <p class="text-white">Yuk! Daftar dan masuk sekarang untuk mengakses materi, 
+            jadwal kelas virtual, dan berinteraksi dengan instruktur serta sesama pelajar. Kelas Anda Menanti!</p>
           <div class="md:hidden absolute bottom-0 left-0 right-0 h-10 w-full bg-white rounded-tl-4xl rounded-tr-4xl"></div>
         </div>
         <!-- /Header section -->
 
         <!-- Form -->
         <div class="col-span-1 pt-5 px-5">
-          <h2 class="text-2xl font-bold">Login Akun</h2>
+          <h2 class="text-2xl font-bold">Registrasi Akun</h2>
           <div class="py-3"></div>
           <form>
-            <label for="username" class="block pb-1">USERNAME/EMAIL</label>
+            <label for="username" class="block pb-1">USERNAME</label>
             <div class="flex border-2 border-solid border-gray-300 focus-within:border-blue-500 rounded-md">
               <span class="pt-3 px-3"><i class="fa-solid fa-user text-gray-500"></i></span>
               <input id="username" type="text" class="block w-full py-3 focus:outline-0" placeholder="" />
+            </div>
+            <div class="py-2"></div>
+            <label for="email" class="block pb-1">EMAIL</label>
+            <div class="flex border-2 border-solid border-gray-300 focus-within:border-blue-500 rounded-md">
+              <span class="pt-3 px-3"><i class="fa-solid fa-envelope text-gray-500"></i></span>
+              <input id="email" type="text" class="block w-full py-3 focus:outline-0" placeholder="" />
             </div>
             <div class="py-2"></div>
             <label for="password" class="block pb-1">PASSWORD</label>
@@ -52,13 +59,9 @@
               <input id="password" type="password" class="block w-full py-3 focus:outline-0" placeholder="" />
             </div>
             <div class="py-3"></div>
-            <div class="text-center">
-              <a href="#" class="py-4">Forgot Password?</a>
-            </div>
-            <div class="py-3"></div>
             <button type="button" class="w-full py-3 border-2 border-solid border-blue-500 bg-blue-500 text-white text-center rounded-md
             cursor-pointer">
-              Masuk
+              Daftar Akun
             </button>
             <div class="py-2.5"></div>
             <button type="button" class="w-full py-3 border-2 border-solid border-blue-500 bg-blue-500 text-white text-center rounded-md
@@ -68,8 +71,8 @@
             <div class="py-4"></div>
             <hr class="border-gray-300" />
             <div class="py-3"></div>
-            <p class="pb-2">Member Baru?</p>
-            <a href="user-registration.html" class="block w-full py-3 border-2 border-solid border-gray-400 text-center rounded-md">Buat Akun</a>
+            <p class="pb-2">Sudah punya akun?</p>
+            <a href="user-access.html" class="block w-full py-3 border-2 border-solid border-gray-400 text-center rounded-md">Login Disini</a>
             <div class="py-6"></div>
           </form>
         </div>
