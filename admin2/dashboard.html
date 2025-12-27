@@ -26,39 +26,39 @@
     <main class="flex">
       <!-- Navigation -->
       <nav class="relative w-56 flex flex-col">
-        <span class="px-3 pb-2.5 pt-4.5 relative z-5 block text-white bg-[#1c2b4a] navigasi tracking-widest font-extrabold
+        <span class="px-3 pb-2.5 pt-4.5 relative z-5 block text-[#8f9cba] bg-[#1c2b4a] navigasi tracking-widest font-extrabold
         border-solid border-b-[#354970] border-b-2">NAVIGASI</span>
         <ul class="py-3 z-3 text-white bg-[#1c2b4a] flex-1">
           <li>
-            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+            <a href="#" class="block py-3.5 px-3 hover:bg-[#344565]">
               <i class="fa-solid fa-house"></i> Dashboard
             </a>
           </li> 
           <li>
-            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+            <a href="#" class="block py-3.5 px-3 hover:bg-[#344565]">
               <i class="fa-solid fa-landmark"></i> Menu 1
             </a>
           </li>
           <li>
-            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+            <a href="#" class="block py-3.5 px-3 hover:bg-[#344565]">
               <i class="fa-solid fa-folder-open"></i> Menu 2
             </a>
-            <div class="bg-[#142036]">
+            <div class="bg-[#142036] border-l-4 border-l-blue-500">
               <ul class="text-white">
                 <li>
-                  <a href="#" class="block py-2.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 1</a>
+                  <a href="#" class="block py-3.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 1</a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 2</a>
+                  <a href="#" class="block py-3.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 2</a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 3</a>
+                  <a href="#" class="block py-3.5 pl-6 pr-3 text-sm hover:bg-[#344565]">Submenu 3</a>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="#" class="block py-1.5 px-3 hover:bg-[#344565]">
+            <a href="#" class="block py-3.5 px-3 hover:bg-[#344565]">
               <i class="fa-solid fa-list"></i> Menu 3
             </a>
           </li>
@@ -84,10 +84,24 @@
                 <i class="fa-regular fa-bell text-[#a6a6a6]"></i>
                 <span class="absolute top-1 right-1 h-3 w-3 bg-red-600 rounded-full border-2 border-transparent transform translate-x-1 -translate-y-1"></span>
               </button>
-              <div class="absolute hidden right-0 group-hover:block w-70 bg-white shadow-lg rounded-md mt-2 z-10">
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Item 3</a>
+              <div class="absolute hidden right-0 group-hover:block w-90 bg-white shadow-lg rounded-md mt-2 z-10">
+                <p class="text-gray-800 pl-3 pb-2 pt-3.5 font-bold navigasi">NOTIFIKASI</p>
+                <hr class="border-gray-300" />
+                <a href="#" class="block px-3 py-1.5 text-gray-800 hover:bg-gray-100">
+                  <p class="text-[1.05rem]">Update in Kurikulum &SmallCircle; <span class="text-gray-400 text-[0.78rem]">3 menit lalu</span></p>
+                  <p class="text-gray-500 text-[0.9rem]">Lorem ipsun dolor sit amet sedsiudfs i...</p>
+                  <span class="text-[0.8rem]">By <span class="font-bold">Author</span></span>
+                  <span class="text-[0.8rem]">24 Maret 2025</span>
+                </a>
+                <hr class="border-gray-300" />
+                <a href="#" class="block px-3 py-1.5 text-gray-800 hover:bg-gray-100">
+                  <p class="text-[1.05rem]">Update in Kurikulum &SmallCircle; <span class="text-gray-400 text-[0.78rem]">3 menit lalu</span></p>
+                  <p class="text-gray-500 text-[0.9rem]">Lorem ipsun dolor sit amet sedsiudfs i...</p>
+                  <span class="text-[0.8rem]">By <span class="font-bold">Author</span></span>
+                  <span class="text-[0.8rem]">24 Maret 2025</span>
+                </a>
+                <hr class="border-gray-300" />
+                <a href="#" class="block py-3 w-full text-center text-blue-400">More...</a>
               </div>
             </div>
             <span class="px-2"></span>
@@ -98,13 +112,15 @@
                 <i class="fa-regular fa-circle-user text-[#a6a6a6]"></i>
               </button>
               <div class="absolute hidden right-0 group-hover:block w-70 bg-white shadow-lg rounded-md mt-2 z-10">
-                <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">
+                <p class="text-gray-800 pl-3 pb-2 pt-3.5 font-bold navigasi">AKUN</p>
+                <hr class="border-gray-300" />
+                <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-100">
                   <i class="fa-solid fa-gear"></i> Pengaturan
                 </a>
-                <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">
+                <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-100">
                   <i class="fa-solid fa-circle-info"></i> Tentang
                 </a>
-                <a href="login.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">
+                <a href="login.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100">
                   <i class="fa-solid fa-right-from-bracket"></i> Logout
                 </a>
               </div>
