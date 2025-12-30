@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" />
     <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="output.css" />
     <!-- Font Awesome 7 -->
     <link rel="stylesheet" 
@@ -45,7 +45,8 @@
 
         <nav>
           <!-- Mobile page button navigation -->
-          <button type="button" class="md:hidden cursor-pointer bg-[#0D0D0D] py-1.5 px-1.5 rounded-md">
+          <button id="mobileMenuBtn" type="button" 
+            class="md:hidden cursor-pointer bg-[#0D0D0D] py-1.5 px-1.5 rounded-md">
             <i class="fa-solid fa-bars text-white text-3xl"></i>
           </button>
 
@@ -62,6 +63,33 @@
     </header>
     <!-- /Header -->
 
+    <!-- Mobile Navigation Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#1B2740]">
+      <nav class="flex flex-col px-5 py-4 space-y-3">
+        <a href="index.html" class="text-white py-2">
+          Beranda
+        </a>
+        <!-- <div class="py-1"></div> -->
+        <a href="course.html" class="text-white py-2">
+          Kursus
+        </a>
+        <!-- <div class="py-1"></div> -->
+        <a href="#" class="text-white py-2">
+          Komunitas
+        </a>
+        <!-- <div class="py-1"></div> -->
+        <a href="tentang-akademi.html" class="text-white py-2">
+          Tentang Akademi
+        </a>
+        <!-- <div class="py-2"></div> -->
+        <a href="user-registration.html" 
+          class="text-white text-center py-3 border border-white rounded-lg mt-2">
+          Daftar
+        </a>
+      </nav>
+    </div>
+    <!-- / Mobile Navigation Menu -->
+
     <!-- Main content -->
     <main>
       <div class="pb-17 pt-10 px-5 bg-[radial-gradient(circle_at_30%_200%,#6D2A3A_0%,#30283F_40%,#1B2740_96%)]">
@@ -76,11 +104,12 @@
 
         <div class="sm:flex md:justify-center sm:gap-x-2 md:gap-x-3 pb-5">
           <a href="course.html" class="block px-4 sm:w-67 py-3 text-center border rounded-lg border-[#BF2441] bg-[#BF2441]
-          text-white">
+          text-white font-bold">
             Jelajah Program
           </a>
           <div class="md:hidden py-2.5"></div>
-          <a href="#" class="block px-4 sm:w-67 py-3 text-center border rounded-lg border-white text-white">Tentang Akademi</a>
+          <a href="tentang-akademi.html" class="block px-4 sm:w-67 py-3 text-center border 
+          rounded-lg border-white text-white">Tentang Akademi</a>
         </div>
       </div>
 
@@ -224,7 +253,7 @@
         <div class="w-70">
           <a href="#" class="block px-4 py-3 text-center border rounded-lg border-[#e54595] bg-[#e54595]
           text-white">
-            Jelajah Komunitas Akademi
+            Kunjungi Komunitas Akademi
           </a>
         </div>
       </div>
@@ -267,4 +296,19 @@
       <p class="text-[#e54595] font-semibold text-center text-sm">&copy;2026 DreamHangul Akademi</p>
     </footer>
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $('#mobileMenuBtn').on('click', function () {
+        $('#mobileMenu').slideToggle(200);
+      });
+
+      $('#mobileMenu a').on('click', function () {
+        $('#mobileMenu').slideUp(200);
+      });
+    });
+  </script>
 </html>
